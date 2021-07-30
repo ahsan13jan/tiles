@@ -15,7 +15,7 @@ export default class Main extends React.Component {
 		const params = Object.fromEntries(urlSearchParams.entries());
 	
 		console.log(params)
-    const apiUrl = 'http://localhost:8080/getDetails?id=' + params.id;
+    const apiUrl = 'http://ec2-3-109-139-237.ap-south-1.compute.amazonaws.com//getDetails?id=' + params.id;
     const response = await fetch(apiUrl);
     const data = await response.json();
     console.log(data);

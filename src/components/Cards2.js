@@ -10,7 +10,7 @@ export default class Cards2 extends React.Component {
   }
   async componentDidMount() {
     console.log('ZZZZZZZ')
-    const apiUrl = 'http://localhost:8080/mainListings';
+    const apiUrl = 'http://ec2-3-109-139-237.ap-south-1.compute.amazonaws.com/mainListings';
     const response = await fetch(apiUrl);
     const data = await response.json();
     console.log(data);
